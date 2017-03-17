@@ -6,7 +6,8 @@ import org.graphast.model.Graph;
 
 public class BerlinImporterApp {
 	public static void main( String[] args ) {
-		String osmFile = BerlinImporterApp.class.getResource("/berlin-140927.osm.pbf").getPath();
+		//String osmFile = BerlinImporterApp.class.getResource("berlin-latest.osm.pbf").getPath();
+		String osmFile = "../../berlin-latest.osm.pbf";
 		String graphastMonacoDir = Configuration.USER_HOME + "/graphast/berlin";
 		String graphhopperMonacoDir = Configuration.USER_HOME + "/graphhopper/berlin";
 		

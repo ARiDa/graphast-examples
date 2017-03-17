@@ -1,0 +1,17 @@
+2017-03-07 10:37:43.323 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Starting BatchInserter(EmbeddedBatchInserter[neo4j/berlin.db])
+2017-03-07 10:37:43.348 INFO  [o.n.k.i.s.StoreFactory] Creating new db @ /Users/lucasperes/Documents/Repositories/graphast-examples/neo4j/berlin.db/neostore
+2017-03-07 10:37:43.802 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2017-03-07 10:37:43.849 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2017-03-07 10:37:43.994 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] Rebuilding lucene scan store, this may take a while
+2017-03-07 10:37:43.998 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] Lucene scan store rebuilt (roughly -1 nodes)
+2017-03-07 10:43:37.315 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Starting BatchInserter(EmbeddedBatchInserter[neo4j/berlin.db])
+2017-03-07 10:45:01.605 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Starting BatchInserter(EmbeddedBatchInserter[neo4j/berlin.db])
+2017-03-07 10:45:26.860 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Starting BatchInserter(EmbeddedBatchInserter[neo4j/berlin.db])
+2017-03-07 10:47:08.584 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Starting BatchInserter(EmbeddedBatchInserter[neo4j/berlin.db])
+2017-03-07 10:47:27.054 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Starting BatchInserter(EmbeddedBatchInserter[neo4j/berlin.db])
+2017-03-07 10:48:01.718 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Starting BatchInserter(EmbeddedBatchInserter[neo4j/berlin.db])
+2017-03-07 10:49:21.561 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Starting BatchInserter(EmbeddedBatchInserter[neo4j/berlin.db])
+2017-03-07 10:49:54.901 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Starting BatchInserter(EmbeddedBatchInserter[neo4j/berlin.db])
+2017-03-07 10:50:55.957 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Starting BatchInserter(EmbeddedBatchInserter[neo4j/berlin.db])
+2017-03-07 10:52:23.327 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Starting BatchInserter(EmbeddedBatchInserter[neo4j/berlin.db])
+2017-03-07 10:52:34.250 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Starting BatchInserter(EmbeddedBatchInserter[neo4j/berlin.db])

@@ -1,0 +1,85 @@
+{
+	"Graphast":{
+		"size":41404680,
+		"objects":{
+			"IntBigArrayBigList @ 0x7410e6a08": 16777280,
+			"ObjectBigArrayBigList @ 0x742698a28": 9944456,
+			"IntBigArrayBigList @ 0x7426980c8": 8.388672,
+			"IntBigArrayBigList @ 0x7996c41d0": 4194368,
+			"Long2LongOpenHashMap @ 0x7996c3ee8": 2.097264,
+			"Long2IntOpenHashMap @ 0x742697ce8": 496,
+			"Long2IntOpenHashMap @ 0x742697ed8": 496,
+			"Long2IntOpenHashMap @ 0x742698548": 496,
+			"Long2IntOpenHashMap @ 0x742698738": 496,
+			"ObjectBigArrayBigList @ 0x7410e1ba0": 136,
+			"IntBigArrayBigList @ 0x742698928": 128,
+			"IntBigArrayBigList @ 0x7426989a8": 128,
+			"String @ 0x7996c4160": 112,
+			"BBox @ 0x796bcbe78": 48
+		}
+	},
+	"GraphHopperContracted":{
+		"size":14848232,
+		"objects":{
+			"LevelGraphStorage @ 0x795d6f5c8":12620280,
+			"PrepareContractionHierarchies @ 0x796c743b0":1049432,
+			"RAMIntDataAccess @ 0x796c99160":1048776,
+			"TranslationMap @ 0x795b60068":122056,
+			"CarFlagEncoder @ 0x795cffd20":6736,
+			"LocationIndexTreeSC @ 0x796c94fe0":320,
+			"EncodingManager @ 0x795cff308":136,
+			"String @ 0x795d18a70  /Users/lucasperes/graphhopper/berlinContracted":136,
+			"String @ 0x795aed0c8  ../../berlin-latest.osm.pbf":96,
+			"String @ 0x795d18f00  locationIndex":72,
+			"String @ 0x795d0e428  shortest":56,
+			"cGHNodeAccess @ 0x795dba6f0":24,
+			"int[][] @ 0x795d940c8":0
+		}
+	},
+	"GraphHopper":{
+		"size":8555600,
+		"objects":{
+			"GraphHopperStorage @ 0x795d47350":7377096,
+			"RAMIntDataAccess @ 0x796713450":1048776,
+			"TranslationMap @ 0x795b5ffa0":122056,
+			"EncodingManager @ 0x795cff480":6872,
+			"LocationIndexTree @ 0x79670f3a8":320,
+			"String @ 0x795d18ad8":120,
+			"String @ 0x795aecf70":96,
+			"String @ 0x795d18ea8":72,
+			"String @ 0x795b51ae8":56,
+			"GHNodeAccess @ 0x795d92a98":24,
+			"class int[][] @ 0x795d6c470":0
+		}
+	},
+	"Vanila":{
+		"size":37503960,
+		"objects":{
+			"ArrayList @ 0x7400a0520":8852656,
+			"HashMap @ 0x7417ff128":5483752,
+			"HashMap @ 0x741ca4bb8":4132768,
+			"ArrayList @ 0x741b87760":960432,
+			"Edge @ 0x741df8478":80,
+			"Edge @ 0x74157b770":80,
+			"Edge @ 0x741df8570":80,
+			"Edge @ 0x741df8668":80,
+			"Edge @ 0x741df86b8":80,
+			"Edge @ 0x74157b868":80,
+			"Edge @ 0x741df8708":80,
+			"Edge @ 0x741df8800":80,
+			"Edge @ 0x74029afc0":80,
+			"Edge @ 0x74157b940":80,
+			"Edge @ 0x741df88f8":80,
+			"Edge @ 0x741df8948":80,
+			"Edge @ 0x74157d9d0":80,
+			"Edge @ 0x741df8998":80,
+			"Edge @ 0x74157da20":80,
+			"Edge @ 0x74009e5a0":80,
+			"Edge @ 0x741df8a90":80,
+			"Edge @ 0x74157da90":80,
+			"Edge @ 0x741df8ae0":80,
+			"Edge @ 0x74029b010":80,
+			"Edge @ 0x74157dae0":80
+		}
+	}
+}

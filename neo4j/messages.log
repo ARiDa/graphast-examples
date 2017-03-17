@@ -1,0 +1,10 @@
+2017-03-07 10:53:39.710 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Starting BatchInserter(EmbeddedBatchInserter[neo4j])
+2017-03-07 10:53:39.737 INFO  [o.n.k.i.s.StoreFactory] Creating new db @ /Users/lucasperes/Documents/Repositories/graphast-examples/neo4j/neostore
+2017-03-07 10:53:40.052 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2017-03-07 10:53:40.145 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2017-03-07 10:53:40.298 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] Rebuilding lucene scan store, this may take a while
+2017-03-07 10:53:40.300 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] Lucene scan store rebuilt (roughly -1 nodes)
+2017-03-07 10:53:40.319 WARN  [o.n.k.i.s.NeoStore] Missing counts store, rebuilding it.
+2017-03-07 10:53:40.495 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 1 to [/Users/lucasperes/Documents/Repositories/graphast-examples/neo4j/neostore.counts.db.b], from [/Users/lucasperes/Documents/Repositories/graphast-examples/neo4j/neostore.counts.db.a].
+2017-03-07 10:53:40.496 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 1 to [/Users/lucasperes/Documents/Repositories/graphast-examples/neo4j/neostore.counts.db.b], from [/Users/lucasperes/Documents/Repositories/graphast-examples/neo4j/neostore.counts.db.a].
+2017-03-07 10:53:40.522 INFO  [o.n.u.b.BatchInserterImpl] Thread[main,5,main] Clean shutdown on BatchInserter(EmbeddedBatchInserter[neo4j])

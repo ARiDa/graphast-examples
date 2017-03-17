@@ -11,7 +11,7 @@ import org.graphast.app.GraphService;
 import org.graphast.geometry.Point;
 import org.graphast.model.Graph;
 import org.graphast.model.GraphBounds;
-import org.graphast.model.GraphBoundsImpl;
+//import org.graphast.model.GraphBoundsImpl;
 import org.graphast.query.route.osr.BoundsRoute;
 import org.graphast.query.route.osr.OSRSearch;
 import org.graphast.query.route.shortestpath.AbstractShortestPathService;

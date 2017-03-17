@@ -4,14 +4,14 @@ import org.graphast.config.Configuration;
 import org.graphast.model.Edge;
 import org.graphast.model.EdgeImpl;
 import org.graphast.model.GraphBounds;
-import org.graphast.model.GraphBoundsImpl;
+import org.graphast.model.GraphImpl;
 import org.graphast.model.Node;
 import org.graphast.model.NodeImpl;
 
 public class GraphExamplePoI {
 	public GraphBounds generateExample() {
 		
-		GraphBounds graph = new GraphBoundsImpl(Configuration.USER_HOME + "/graphast/test/examplePoI");
+		GraphBounds graph = new GraphImpl(Configuration.USER_HOME + "/graphast/test/examplePoI");
 		
 		Node node;
 		Edge edge;
