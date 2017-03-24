@@ -22,14 +22,14 @@ public class TableParserUtils {
 		g.addNode(new Node(5l));
 		g.addNode(new Node(6l));
 		g.addNode(new Node(7l));
-		g.addEdge(new Edge(1l, 0, 1, 6.));
-		g.addEdge(new Edge(2l, 1, 2, 2.));
-		g.addEdge(new Edge(3l, 0, 5, 3.));
-		g.addEdge(new Edge(4l, 1, 3, 7.));
-		g.addEdge(new Edge(5l, 1, 6, 12.));
-		g.addEdge(new Edge(6l, 3, 4, 11.));
-		g.addEdge(new Edge(7l, 4, 6, 3.));
-		g.addEdge(new Edge(8l, 3, 5, 15.));
+		g.addEdge(new Edge(1l, 0, 1, 6));
+		g.addEdge(new Edge(2l, 1, 2, 2));
+		g.addEdge(new Edge(3l, 0, 5, 3));
+		g.addEdge(new Edge(4l, 1, 3, 7));
+		g.addEdge(new Edge(5l, 1, 6, 12));
+		g.addEdge(new Edge(6l, 3, 4, 11));
+		g.addEdge(new Edge(7l, 4, 6, 3));
+		g.addEdge(new Edge(8l, 3, 5, 15));
 		return g;
 	}
 	
@@ -41,14 +41,14 @@ public class TableParserUtils {
 		g.addNode(new Node(4l));
 		g.addNode(new Node(5l));
 		g.addNode(new Node(6l));
-		g.addEdge(new Edge(1l, 0, 1, 1.));
-		g.addEdge(new Edge(2l, 0, 2, 10.));
-		g.addEdge(new Edge(3l, 1, 2, 2.));
-		g.addEdge(new Edge(4l, 2, 3, 3.));
-		g.addEdge(new Edge(5l, 2, 4, 10.));
-		g.addEdge(new Edge(6l, 3, 4, 2.));
-		g.addEdge(new Edge(7l, 3, 5, 20.));
-		g.addEdge(new Edge(8l, 4, 5, 1.));
+		g.addEdge(new Edge(1l, 0, 1, 1));
+		g.addEdge(new Edge(2l, 0, 2, 10));
+		g.addEdge(new Edge(3l, 1, 2, 2));
+		g.addEdge(new Edge(4l, 2, 3, 3));
+		g.addEdge(new Edge(5l, 2, 4, 10));
+		g.addEdge(new Edge(6l, 3, 4, 2));
+		g.addEdge(new Edge(7l, 3, 5, 20));
+		g.addEdge(new Edge(8l, 4, 5, 1));
 		return g;
 	}
 	
@@ -66,27 +66,27 @@ public class TableParserUtils {
 		g.addNode(new Node(10l));
 		g.addNode(new Node(11l));
 		g.addNode(new Node(12l));
-		g.addEdge(new Edge(1l, 0, 1, 1306.));
-		g.addEdge(new Edge(2l, 0, 4, 2161.));
-		g.addEdge(new Edge(3l, 0, 6, 2661.));
-		g.addEdge(new Edge(4l, 1, 2, 629.));
-		g.addEdge(new Edge(5l, 1, 3, 919.));
-		g.addEdge(new Edge(6l, 2, 3, 435.));
-		g.addEdge(new Edge(7l, 3, 4, 1225.));
-		g.addEdge(new Edge(8l, 3, 5, 1983.));
-		g.addEdge(new Edge(9l, 4, 5, 1258.));
-		g.addEdge(new Edge(10l, 4, 6, 1483.));
-		g.addEdge(new Edge(11l, 5, 6, 1532.));
-		g.addEdge(new Edge(12l, 5, 8, 2113.));
-		g.addEdge(new Edge(13l, 5, 9, 2161.));
-		g.addEdge(new Edge(14l, 6, 7, 661.));
-		g.addEdge(new Edge(15l, 7, 8, 1145.));
-		g.addEdge(new Edge(16l, 7, 10, 1613.));
-		g.addEdge(new Edge(17l, 8, 9, 1709.));
-		g.addEdge(new Edge(18l, 8, 10, 725.));
-		g.addEdge(new Edge(19l, 8, 11, 383.));
-		g.addEdge(new Edge(20l, 9, 11, 2145.));
-		g.addEdge(new Edge(21l, 10, 11, 338.));
+		g.addEdge(new Edge(1l, 0, 1, 1306));
+		g.addEdge(new Edge(2l, 0, 4, 2161));
+		g.addEdge(new Edge(3l, 0, 6, 2661));
+		g.addEdge(new Edge(4l, 1, 2, 629));
+		g.addEdge(new Edge(5l, 1, 3, 919));
+		g.addEdge(new Edge(6l, 2, 3, 435));
+		g.addEdge(new Edge(7l, 3, 4, 1225));
+		g.addEdge(new Edge(8l, 3, 5, 1983));
+		g.addEdge(new Edge(9l, 4, 5, 1258));
+		g.addEdge(new Edge(10l, 4, 6, 1483));
+		g.addEdge(new Edge(11l, 5, 6, 1532));
+		g.addEdge(new Edge(12l, 5, 8, 2113));
+		g.addEdge(new Edge(13l, 5, 9, 2161));
+		g.addEdge(new Edge(14l, 6, 7, 661));
+		g.addEdge(new Edge(15l, 7, 8, 1145));
+		g.addEdge(new Edge(16l, 7, 10, 1613));
+		g.addEdge(new Edge(17l, 8, 9, 1709));
+		g.addEdge(new Edge(18l, 8, 10, 725));
+		g.addEdge(new Edge(19l, 8, 11, 383));
+		g.addEdge(new Edge(20l, 9, 11, 2145));
+		g.addEdge(new Edge(21l, 10, 11, 338));
 		return g;
 	}
 	

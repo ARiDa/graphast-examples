@@ -42,7 +42,7 @@ public class BerlinGraphHopperExample {
 //											.setVehicle("car").setAlgorithm("dijkstra");
 			res = hopper.route(req);
 			sw.stop();
-//			System.out.println(res.getDistance());
+			System.out.println(res.getDistance());
 //			System.out.println(res.getPoints().getSize()-1);
 				
 			try{

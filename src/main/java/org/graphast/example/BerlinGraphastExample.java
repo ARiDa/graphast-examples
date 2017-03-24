@@ -14,6 +14,7 @@ import org.graphast.query.route.shortestpath.ShortestPathService;
 import org.graphast.query.route.shortestpath.dijkstra.DijkstraConstantWeight;
 import org.graphast.query.route.shortestpath.model.Path;
 import org.utils.ObjectHelper;
+import org.utils.VanilaDjikstra;
 
 import com.graphhopper.util.StopWatch;
 
@@ -33,12 +34,8 @@ public class BerlinGraphastExample {
 		
 		else{
 			// The graph in ${USER_HOME}/graphast/example must already exist.
-			Runtime run = Runtime.getRuntime();
-			long mem = run.freeMemory();
-			System.out.println(mem);
 			Graph graph = new GraphImpl(Configuration.USER_HOME + "/graphast/berlin");		
 			graph.load();
-			System.out.println(run.freeMemory());
 			long from = graph.getNodeId(Double.parseDouble(args[0]),Double.parseDouble(args[1]));
 			long to = graph.getNodeId(Double.parseDouble(args[2]),Double.parseDouble(args[3]));
 			
@@ -48,13 +45,15 @@ public class BerlinGraphastExample {
 //			long to = graph.getNodeId(52.34046,13.647459);
 			//System.out.println(from+" -> "+graph.getNode(from).getLatitude()+" "+graph.getNode(from).getLongitude());
 			//System.out.println(to+" -> "+graph.getNode(to).getLatitude()+" "+graph.getNode(to).getLongitude());
-			ShortestPathService shortestPath = new DijkstraConstantWeight(graph);
+			//ShortestPathService shortestPath = new DijkstraConstantWeight(graph);
+			ShortestPathService shortestPath = new VanilaDjikstra(graph);
 	
 			StopWatch sw = new StopWatch();
 			sw.start();
 			Path path = shortestPath.shortestPath(from, to);		
 			sw.stop();
-			
+//			System.out.println("Time: "+sw.getTime());
+			//System.out.println("Distance " + path.getTotalDistance()/1000);
 			try{
 				FileWriter fw = new FileWriter(args[4]);
 			    BufferedWriter bw = new BufferedWriter(fw);
@@ -65,7 +64,7 @@ public class BerlinGraphastExample {
 			    out.close();
 			} catch (IOException e) {}
 			
-//			System.out.println("Distance: "+path.getTotalDistance());
+			//System.out.println("Distance: "+path.getTotalDistance());
 //			System.out.println("Length: "+path.getEdges().size());
 			
 	//		System.out.println("Mean execution time(ms):" + sumTimes/numExperiments);

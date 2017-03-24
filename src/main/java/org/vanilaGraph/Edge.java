@@ -4,9 +4,9 @@ public class Edge extends GraphEntity {
 	
 	private Long id;
 	private int fromNodeIndex, toNodeIndex;
-	private Double cost;
+	private double cost;
 	
-	public Edge(Long edgeId, int fromIndex, int toIndex, Double cost) {
+	public Edge(Long edgeId, int fromIndex, int toIndex, double cost) {
 		this.id = edgeId;
 		this.fromNodeIndex = fromIndex;
 		this.toNodeIndex = toIndex;
@@ -17,7 +17,7 @@ public class Edge extends GraphEntity {
 		return id;
 	}
 	
-	public Double getCost() {
+	public double getCost() {
 		return cost;
 	}
 	

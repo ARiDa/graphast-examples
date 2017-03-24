@@ -1,13 +1,12 @@
-package org.vanilaGraph;
-
+package org.utils;
 
 public class DistanceElement implements Comparable<DistanceElement>{
 	private Long realId;
-	private int index, previousIndex;
-	private double distance;
+	private long index, previousIndex;
+	private int distance;
 	private boolean visited;
 	
-	public DistanceElement(int index) {
+	public DistanceElement(long index) {
 		this.index = index;
 		this.distance = Integer.MAX_VALUE;
 		previousIndex = -1;
@@ -19,11 +18,11 @@ public class DistanceElement implements Comparable<DistanceElement>{
 		this.realId = realId;
 	}
 	
-	public void changePrevious(int newPreviousIndex) {
+	public void changePrevious(long newPreviousIndex) {
 		previousIndex = newPreviousIndex;
 	}
 	
-	public void changeDistance(double newDistance) {
+	public void changeDistance(int newDistance) {
 		distance = newDistance;
 	}
 	
@@ -31,15 +30,15 @@ public class DistanceElement implements Comparable<DistanceElement>{
 		return realId;
 	}
 	
-	public int getIndex() {
+	public long getIndex() {
 		return this.index;
 	}
 	
-	public double getDistance() {
+	public int getDistance() {
 		return distance;
 	}
 	
-	public int getPreviousIndex() {
+	public long getPreviousIndex() {
 		return previousIndex;
 	}
 	
@@ -53,7 +52,7 @@ public class DistanceElement implements Comparable<DistanceElement>{
 
 	@Override
 	public int compareTo(DistanceElement o) {
-		return Double.compare(this.distance,o.getDistance());
+		return this.distance - o.getDistance();
 	}
 	
 }

@@ -19,7 +19,7 @@ def resetFile(filename="../test_results.csv"):
         f.write("")
 
 def generateTimes(n_tests=10,from_file="../tests.txt",operations=operations,save_file="../test_results.csv"):
-    resetFile()
+    resetFile(filename=save_file)
 
     start = time()
     #files = [open("../{}Results.csv".format(file_name)) for file_name in operations]

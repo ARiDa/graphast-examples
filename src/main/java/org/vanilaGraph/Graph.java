@@ -65,7 +65,7 @@ public class Graph {
 	}
 		
 	public DistanceVector runDijkstra(int sourceIndex, int targetIndex) {
-		DistanceVector vector = init(sourceIndex);
+		DistanceVector vector = new DistanceVector(sourceIndex, this);
 		Queue<DistanceElement> toVisit = new PriorityQueue<>();
 				
 		toVisit.add(vector.getElement(sourceIndex));
@@ -81,7 +81,7 @@ public class Graph {
 			for (Edge e : nodes.get(min.getIndex()).getAdjacents()) {
 				DistanceElement neighbor = vector.getElement(e.getToNodeIndex());
 				
-				Double newDistance = min.getDistance() + e.getCost();
+				double newDistance = min.getDistance() + e.getCost();
 				if (neighbor.getDistance() > newDistance && !neighbor.isVisited()) {
 					neighbor.changeDistance(newDistance);
 					neighbor.changePrevious(min.getIndex());
@@ -91,10 +91,6 @@ public class Graph {
 		}
 		
 		return vector;
-	}
-	
-	public DistanceVector init(int sourceIndex) {
-		return new DistanceVector(sourceIndex, nodes);
 	}
 	
 	public int getRandomNodeIndex() {

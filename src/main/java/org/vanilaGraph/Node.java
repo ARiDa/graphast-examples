@@ -35,12 +35,12 @@ public class Node extends GraphEntity {
 		return adjacents;
 	}
 	
-	public Double getCostToNode(int otherIndex) {
+	public double getCostToNode(int otherIndex) {
 		for (Edge e: adjacents) {
 			if (this.getGraphIndex() == e.getToNodeIndex())
 				return e.getCost();
 		}
-		return null;
+		return -1;
 	}
 	
 }
