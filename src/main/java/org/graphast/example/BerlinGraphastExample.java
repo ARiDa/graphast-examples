@@ -34,23 +34,17 @@ public class BerlinGraphastExample {
 		
 		else{
 			// The graph in ${USER_HOME}/graphast/example must already exist.
-			Graph graph = new GraphImpl(Configuration.USER_HOME + "/graphast/berlin");		
+			Graph graph = new GraphImplBetter(Configuration.USER_HOME + "/graphast/berlin");		
 			graph.load();
 			long from = graph.getNodeId(Double.parseDouble(args[0]),Double.parseDouble(args[1]));
 			long to = graph.getNodeId(Double.parseDouble(args[2]),Double.parseDouble(args[3]));
 			
-//			long from = graph.getNodeId(52.671235,13.279887);
-//			long to = graph.getNodeId(52.34046,13.647459);
-//			long from = graph.getNodeId(52.671235,13.279887);
-//			long to = graph.getNodeId(52.34046,13.647459);
-			//System.out.println(from+" -> "+graph.getNode(from).getLatitude()+" "+graph.getNode(from).getLongitude());
-			//System.out.println(to+" -> "+graph.getNode(to).getLatitude()+" "+graph.getNode(to).getLongitude());
 			//ShortestPathService shortestPath = new DijkstraConstantWeight(graph);
 			ShortestPathService shortestPath = new VanilaDjikstra(graph);
-	
 			StopWatch sw = new StopWatch();
+			Path path = null;
 			sw.start();
-			Path path = shortestPath.shortestPath(from, to);		
+			path = shortestPath.shortestPath(from, to);		
 			sw.stop();
 //			System.out.println("Time: "+sw.getTime());
 			//System.out.println("Distance " + path.getTotalDistance()/1000);

@@ -31,7 +31,6 @@ public class BerlinGraphHopperExample {
 			GHResponse res = null;
 			StopWatch sw = new StopWatch();
 	
-			
 			sw.start();
 			req = new GHRequest(Double.parseDouble(args[0]),Double.parseDouble(args[1]),
 					Double.parseDouble(args[2]),Double.parseDouble(args[3]))
@@ -42,7 +41,7 @@ public class BerlinGraphHopperExample {
 //											.setVehicle("car").setAlgorithm("dijkstra");
 			res = hopper.route(req);
 			sw.stop();
-			System.out.println(res.getDistance());
+			//System.out.println(res.getDistance());
 //			System.out.println(res.getPoints().getSize()-1);
 				
 			try{

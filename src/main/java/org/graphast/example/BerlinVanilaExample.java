@@ -24,12 +24,14 @@ public class BerlinVanilaExample {
 			int targetIndex = g.getNodeIndexByCoord(toCoord);
 			//System.out.println(targetIndex);
 			//long init = System.currentTimeMillis();
-			
+			DistanceVector path = null;
 			StopWatch sw = new StopWatch();
+			//for (int i=0; i<1000; i++){
 			sw.start();
-			DistanceVector path = g.runDijkstra(sourceIndex, targetIndex);
+			path = g.runDijkstra(sourceIndex, targetIndex);
 			sw.stop();
-			System.out.println(path.getDistance(targetIndex));
+			//}
+			//System.out.println(path.getDistance(targetIndex));
 			//long time = System.currentTimeMillis() - init;
 			try {
 				BufferedWriter writer = new BufferedWriter(new FileWriter(new File(args[4])));

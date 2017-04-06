@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+import org.graphast.example.GraphImplBetter;
 import org.graphast.model.Edge;
 import org.graphast.model.Graph;
 import org.graphast.model.GraphBounds;
@@ -15,8 +16,12 @@ import org.graphast.query.route.shortestpath.model.Path;
 import org.graphast.query.route.shortestpath.model.RouteEntry;
 
 public class VanilaDjikstra extends AbstractShortestPathService {
+	
+	private GraphImplBetter graph;
+	
 	public VanilaDjikstra(Graph graph) {
 		super(graph);
+		this.graph = (GraphImplBetter) graph;
 	}
 	
 	public VanilaDjikstra(GraphBounds graphBounds) {
@@ -59,15 +64,14 @@ public class VanilaDjikstra extends AbstractShortestPathService {
 			if(min.isVisited()) continue;
 			min.setVisited(true);
 			//System.out.println(min.getIndex());
-			for(long edgeId: graph.getOutEdges(min.getIndex())){
-				Edge e = graph.getEdge(edgeId);
+			for(Edge e: graph.getOutEdgesBetter(min.getIndex())){
 				DistanceElement neighbor = vector.getElement(e.getToNode());
 				
 				int newDistance = min.getDistance() + e.getDistance();
 				if(neighbor.getDistance() > newDistance && !neighbor.isVisited()) {
 					neighbor.changeDistance(newDistance);
 					neighbor.changePrevious(min.getIndex());
-					parents.put(neighbor.getIndex(), new RouteEntry(min.getIndex(), e.getDistance(), edgeId, e.getLabel()));
+					parents.put(neighbor.getIndex(), new RouteEntry(min.getIndex(), e.getDistance(), e.getId(), e.getLabel()));
 					toVisit.add(neighbor);
 				}
 			}
